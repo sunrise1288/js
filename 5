@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class NextEvenNumber {
+public static void main(String[] args) {
+Scanner scanner = new Scanner(System.in);
+
+System.out.print("Введите целое число: ");
+int n = scanner.nextInt();
+
+int nextEvenNumber = n + 2 - (n % 2);
+
+System.out.println("Следующее четное число: " + nextEvenNumber);
+}
+}
