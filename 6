@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Bakery {
+public static void main(String[] args) {
+Scanner scanner = new Scanner(System.in);
+
+System.out.print("Введите стоимость пирожка в рублях: ");
+int a = scanner.nextInt();
+
+System.out.print("Введите стоимость пирожка в копейках: ");
+int b = scanner.nextInt();
+
+System.out.print("Введите количество пирожков: ");
+int n = scanner.nextInt();
+
+int totalCostRubles = (a * n + (b * n) / 100);
+int totalCostKopecks = (b * n) % 100;
+
+System.out.println("Стоимость покупки: " + totalCostRubles + " рублей " + totalCostKopecks + " копеек");
+}
+}
