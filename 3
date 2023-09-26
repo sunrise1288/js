@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class NumberText {
+public static void main(String[] args) {
+Scanner scanner = new Scanner(System.in);
+
+System.out.print("Введите целое число (-10000 <= x <= 10000): ");
+int number = scanner.nextInt();
+
+if (number < 0) {
+System.out.println("Отрицательное");
+} else if (number > 0) {
+System.out.println("Положительное");
+} else {
+System.out.println("Ноль");
+}
+
+if (Math.abs(number) % 2 == 0) {
+System.out.println("Четное");
+} else {
+System.out.println("Нечетное");
+}
+}
+}
